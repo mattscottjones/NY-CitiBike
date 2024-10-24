@@ -391,7 +391,7 @@ elif page == 'Map of Aggregated Bike Trips':
     st.text("")
     st.text("")
     st.html(
-        "The above map juxtaposes the aggregate all Citi Bike trip paths taken in 2022 with the layout of the MTA subway entrances. The data has been refined to only include the trip paths along which there were >1000 different trips. With that filter in place, the majority of the most popular trip paths happened within Manhattan. Despite there being subway stations branching out into the Bronx, Queens, and Brooklyn, very few trips starting or ending in those areas were popular enough to make it onto this map.")
+        "The above map juxtaposes the aggregate all Citi Bike trip paths taken in 2022 with the layout of the MTA subway entrances. The data has been refined to only include the trip paths along which there were >1200 different trips. With that filter in place, the majority of the most popular trip paths happened within Manhattan. Despite there being subway stations branching out into the Bronx, Queens, and Brooklyn, very few trips starting or ending in those areas were popular enough to make it onto this map.")
     st.text("")
     st.html(
         "<h5 align='center' style='color:#3881B5;'>Citi Bike rides are connected to the MTA subway system</h5>")
