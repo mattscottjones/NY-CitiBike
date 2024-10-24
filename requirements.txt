@@ -6,7 +6,6 @@ seaborn == 0.12.1
 plotly == 5.13.0
 keplergl == 0.3.2
 streamlit == 1.39.0
-streamline-nightly == 1.39.1
 streamlit_keplergl
 numerize == 0.12
 pillow == 11.0.0
