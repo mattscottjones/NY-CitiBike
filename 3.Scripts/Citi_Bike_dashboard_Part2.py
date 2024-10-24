@@ -44,11 +44,11 @@ accent = '#EB392A'
 ################################## IMPORT DATA ##########################################
 #########################################################################################
 
-folderpath = r'/Users/matthewjones/Documents/CareerFoundry/Data Visualization with Python/Achievement 2/NY-CitiBike/2.Data/Processed_Data'
+folderpath = '/NY-CitiBike/2.Data/Processed_Data'
 
-picturepath = r'/Users/matthewjones/Documents/CareerFoundry/Data Visualization with Python/Achievement 2/NY-CitiBike/4.Visualizations/Dashboard_Images'
+picturepath = '/NY-CitiBike/4.Visualizations/Dashboard_Images'
 
-htmlpath = r'/Users/matthewjones/Documents/CareerFoundry/Data Visualization with Python/Achievement 2/NY-CitiBike/4.Visualizations/Citi_Bike_Trips_Aggregated.html'
+htmlpath = '/NY-CitiBike/4.Visualizations/Citi_Bike_Trips_Aggregated.html'
 
 line_chart_data = pd.read_csv(os.path.join(folderpath, 'DB_line_chart_data.csv'), index_col = 0)
 bar_chart_start = pd.read_csv(os.path.join(folderpath, 'DB_bar_chart_start.csv'), index_col = 0)
