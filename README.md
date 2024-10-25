@@ -1,9 +1,10 @@
-# Citi Bike in New York City 2022 -Exploring Current User Behavior and Expansion Opportunities
+# Citi Bike in New York City 2022 -
+# Exploring Current User Behavior and Expansion Opportunities
 <p align="center">
   <img width="1261" alt="Screenshot 2024-09-06 at 2 37 26 PM" src="https://github.com/user-attachments/assets/2aea39da-cba7-4af2-925f-7430462d15c6">
 </p>
 <h3 align="center">
-  Scraping a Wikipedia page to find country interrelations in the 20th century.
+  Building a strategic data dashboard that answers Citi Bike business questions.
 </h3>
 
 
@@ -22,8 +23,11 @@
 ## GENERAL INFO
 Citi Bike's popularity has increased since its launch in 2013, and during the Covid-19 pandemic, even more New York residents have seen the merit in bike sharing. The higher demand has led to distribution problems (i.e. too few bikes at popular stations, or too many bikes parked at stations making it impossible to return a bike). This application will diagnose where these distribution issues are most likely to arise, and theorize what the root of the problem may be.
 
-1. Which countries had the most influence during the 20th Century?
-2. What patterns in country relationships can we identify?
+1. Is there a seasonal demand for Citi Bike?
+2. How much should we scaling bikes back during the low-demand season?
+3. Which stations are the most popular starting/ending stations?
+4. Where are we most likely to see distribution issues?
+5. What are some ideas for ensuring bikes are always stocked at the most popular stations?
 
 <p align="center">
 <img width=80% alt="-Pngtree—blue connecting network world map_7325681" src="https://github.com/user-attachments/assets/01be5328-fea9-417e-bdef-ebd57f7c5f58"> 
@@ -42,16 +46,19 @@ For this project, the following Python libraries were used:
 
 
 ## DATA SOURCE
-Data was scraped from the Wikipedia page, **[Key events of the 20th century](https://en.wikipedia.org/w/index.php?title=Key_events_of_the_20th_century&oldid=1244115362)**, in August 2024. Using BeautifulSoup the full text of the article was saved as a text file, `20th Century Events.txt`. And using Selenium, all names of countries in the article were compiled into a csv file `countries_list_20th_century_1.5.csv`. 
-
-The full details of the data are available **[here](https://en.wikipedia.org/w/index.php?title=Key_events_of_the_20th_century&oldid=1244115362)**.
+Open source data was acquired from the **[Citi Bike Database for the year 2022](https://citibikenyc.com/system-data)**. To supplement this data, weather data gathered from **[NOAA's](https://www.noaa.gov/)** API service was gathered. Only the daily average temperature was needed from this dataset. A separate open source dataset of the MTA subway entrance locations in New York City was obtained from **[Open NY](https://data.ny.gov/widgets/i9wp-a4ja)**.
+Data was scraped from the Wikipedia page, **[Key events of the 20th century](https://en.wikipedia.org/w/index.php?title=Key_events_of_the_20th_century&oldid=1244115362)**, in 
 <br>
 <br>
 <br>
-<i>**Potential Bias #1:** The information on Wikipedia is curated by editors around the world. Although there is little incentive for bias in this data, the method of data recording lends itself to possible errors.</i>
+<i>**Potential Bias #1:** There were a significant amount of outliers in respect to Citi Bike trip duration. About 5% of rides were too long to include in trip duration distribution data. So, this analysis does not take into account the behavior of customers who use Citi Bike for long distance trips.</i>
 <br>
 <br>
-<i>**Potential Bias #2:** Relying on only one source to determine a country's global importance introduces sampling bias. Depending on the main contributing editors to this Wikipedia page, there may be an emphasis on certain countries' involvement in global affairs over others. For instance, in 2024, we're seeing the consequences of many decades of unrest between Egypt, Israel, Palestine, Syria, and other Middle Eastern countries. The preceding events, that began in the 20th century, are not mentioned in this article.</i>
+<i>**Potential Bias #2:** Only a sample of the data could be included in the geospatial and distribution visualizations. The sample is theoretically representative of the larger population, but testing this sample was out of the scope of this project. Data was sampled by:</i>
+```
+np.random.seed(32)
+red = np.random.rand(len(df_duration_clean)) <= 0.975
+```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
