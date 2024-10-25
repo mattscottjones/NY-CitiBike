@@ -24,7 +24,7 @@ from IPython.core.display import display, HTML
 
 st.set_page_config(page_title = 'Citi Bike Strategy Dashboard', layout='wide')
 st.html(
-    "<h1><font color='#3881B5'>Citi Bikes</font> in New York City 2022 - <br>Exploring Current User Behavior <br>and Expansion Opportunities</h1>")
+    "<h1><font color='#3881B5'>Citi Bike</font> in New York City 2022 - <br>Exploring Current User Behavior <br>and Expansion Opportunities</h1>")
 
 ## Define side bar
 st.sidebar.title('Navigator')
@@ -352,7 +352,7 @@ elif page == 'Most Popular Stations':
     )
     st.text("")
     st.html(
-        "All of the top 20 starting and ending stations are in <b style='color:#3881B5;'>Manhattan</b>. This is interesting because Manhattan is only the 3rd most populous borough in New York City (Queens and Brooklyn having >400k more people)$^{2}$. The resident population does not predict how popular Citi Bikes would be.")
+        "All of the top 20 starting and ending stations are in <b style='color:#3881B5;'>Manhattan</b>. This is interesting because Manhattan is only the 3rd most populous borough in New York City (Queens and Brooklyn having >400k more people)$^{2}$. The resident population does not predict how popular Citi Bike is.")
     st.text("")
     st.html(
         "<h5 align='center' style='color:#3881B5;'>Are New York City residents the ones traveling to these places?</h5>")
