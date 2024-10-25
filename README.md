@@ -30,7 +30,7 @@ Citi Bike's popularity has increased since its launch in 2013, and during the Co
 5. What are some ideas for ensuring bikes are always stocked at the most popular stations?
 
 <p align="center">
-<img width=80% alt="-Pngtree—blue connecting network world map_7325681" src="https://github.com/user-attachments/assets/01be5328-fea9-417e-bdef-ebd57f7c5f58"> 
+<img width=80% alt="Citi Bike Station (medium)" src="https://github.com/user-attachments/assets/528a504a-9e86-444e-b75a-00f49c87cad4"> 
 </p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
