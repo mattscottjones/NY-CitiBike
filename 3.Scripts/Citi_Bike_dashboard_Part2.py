@@ -305,7 +305,8 @@ elif page == 'Most Popular Stations':
          st.metric(label = 'Total Bike Rides', value= numerize(total_rides))
 
         ## Starting Stations Bar Chart
-        bar_start_fig = go.Figure(px.bar(df2.sort_values('Grand Total', ascending=False),
+        bar_start_fig = go.Figure(px.bar(df2.sort_values(['Grand Total', 'rideable_type'],
+                                                         ascending = [False, True]),
                                          x = 'start_station_name', 
                                          y = 'Total', 
                                          color = 'rideable_type',
