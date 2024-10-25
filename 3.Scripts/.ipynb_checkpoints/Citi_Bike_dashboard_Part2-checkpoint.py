@@ -381,6 +381,16 @@ elif page == 'Map of Aggregated Bike Trips':
 
     
     ####################### GEOSPATIAL VISUALIZATION #######################
+    col1, col2 = st.columns(2)
+    with col1:
+        st.html(
+        "<h5 align='center'><b>Most Popular Bike Trips</b></h5>"
+        )
+    with col2:
+        st.html(
+        "<h5 align='center'><b>Subway Entrances</b></h5>"
+        )
+    
     with open(htmlpath,'r') as f: 
         html_data = f.read()
 
