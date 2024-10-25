@@ -66,16 +66,18 @@ red = np.random.rand(len(df_duration_clean)) <= 0.975
 1. Project Management
      * Project brief laying out the expectations and deliverables
 2. Data
-     * Wikipedia text file: `20th Century Events.txt`
-     * List of countries csv file: `countries_list_20th_century_1.5.csv`
-     * Cleaned data files for analysis
-3. Scripts: Jupyter notebooks containing all code
-     * Creating a Virtual Environment
-     * Data Scrape
-     * Text Mining
+     * Citi Bike ride data for 2022
+     * New York Weather Data for 2022
+     * Expensive New York neighborhood data: `data-16QWY.csv`
+     * Subway entrance data: `MTA_Entrances_2024.csv`
+     * Cleaned and wrangled data for dashboard visualizations
+3. Scripts: Jupyter notebooks and python files
+     * Sourcing Bike and Weather Data
      * Data Cleaning
-     * NLP Network Analysis
-     * Network Visualizations
+     * Data Visualizations
+     * Geospatial Visualizations
+     * Final Database Data Wrangling
+     * Creating a Data Dashboard
 4. Visualizations
      * Images for the dashboard
      * Screenshots of the visualizations for sharing with stakeholders
