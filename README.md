@@ -1,7 +1,7 @@
 # Citi Bike in New York City 2022 -
 # Exploring Current User Behavior and Expansion Opportunities
 <p align="center">
-  <img width="1261" alt="Screenshot 2024-09-06 at 2 37 26 PM" src="https://github.com/user-attachments/assets/2aea39da-cba7-4af2-925f-7430462d15c6">
+  <img width="1261" alt=Citi Bike Logo" src="[https://github.com/user-attachments/assets/2aea39da-cba7-4af2-925f-7430462d15c6](https://github.com/user-attachments/assets/5c9b2bb0-b55c-4b65-a05b-018de7517933)">
 </p>
 <h3 align="center">
   Building a strategic data dashboard that answers Citi Bike business questions.
