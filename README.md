@@ -84,7 +84,7 @@ red = np.random.rand(len(df_duration_clean)) <= 0.975
      * Geospatial visualization HTML file
   
 <p display="flex" justify-content="center" align="center" align-items="center" text-align="center">
-<img width=48% alt="degree_centrality_20th-Century_countries" src="https://github.com/user-attachments/assets/dbf6f334-7e0c-405d-80ab-a65ba1e87d94">      <img width=48% alt="alt="Screenshot 2024-09-06 at 2 11 12 PM" src="https://github.com/user-attachments/assets/2adda307-685b-4f9e-beb5-3f63923d4e7c">
+<img width=95% alt="Screenshot 2024-10-24 at 9 27 19 PM" src="https://github.com/user-attachments/assets/396fa32d-cf91-473f-b3f1-65678eadc742">
 </p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
