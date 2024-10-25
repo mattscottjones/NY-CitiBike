@@ -201,7 +201,7 @@ elif page == 'Seasonality of Bike Usage':
     st.markdown(
         "- Warm weather encourages outdoor exercise, so people may turn to our bicycles for daily transportation. This is consistent with data that subway usage in privileged areas goes down in summer months$^{2}$.")
     st.markdown(
-        "- Commuters could work from home more more often during the summer and may not be traveling as long of distance as they would in the winter.")
+        "- Commuters could work from home more more often during the summer than in winter, and without needing to take the subway to work, they may use Citi Bike for their daily transportation within their neighborhood.")
     st.markdown(
         "- Children are out of school during the summer, and may be more likely to ride bikes")
     st.text("")
